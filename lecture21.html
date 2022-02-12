@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 21. 반복문(loop) -->
+    <h1>Loop</h1>
+    <ul>
+        <script>
+            document.write('<li>1</li>');
+            var i = 0;
+            while(i < 3){
+                document.write('<li>2</li>');
+                document.write('<li>3</li>');
+                i = i + 1;
+            }
+            document.write('<li>4</li>');
+            //예를 들어 23번사이에 코드를 반복적으로 1억개를 실행해야 한다면? > copy&paste 불가능
+            //다 했다 가정해도 추후 버그가 있거나 수정해야 한다면 수작업으로 다 변경할 수 없다
+            //while : 반복문 keyword
+            //while 괄호안에 불리언을 입력하고 false 일때까지 반복적으로 실행한다.
+            //false 가 나오면 나오면 그때서야 다음의 코드를 실행한다.
+            //즉, 반복문은 순서를 제어하는 제어문이라고 할 수 있다
+            //while 후에 true를 집어 넣으면 영원히 계속 실행되기 때문에 브라우저가 출력되지 않는다. 따라서 while 후에는 언제 끝날지 분명히 지정해줘야 한다.
+            //3번 반복적으로 설정하고 싶을때 관습적으로 i라는 변수를 설정한다.
+        </script>
+    </ul> 
+</body>
+</html>

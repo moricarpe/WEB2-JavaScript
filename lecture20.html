@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 19. 반복문 예고 -->
+
+    <!-- 20. 배열 -->
+    <!-- 배열이란 뭘까? / 집에 있는 사물이 많을 수록 정리정돈의 필요성이 생긴다. 여러가지 수납공간을 만들어야 한다 -->
+    <!-- 복잡해진 코딩을 수납장에 둬서 정리해야한다. -->
+    <!-- 연관된 데이터를 정리정돈해서 담아구는 것을 배열(array)라고 한다. -->
+    <h1>Array</h1>
+    <h2>Syntax</h2>
+    <script>
+        ["moca", "leesanghyeon"];
+        //배열은 대괄호 안에 ,로 분류한다.
+        //이 배열을 변수안에 담는다.
+        var itsme = ["moca", "leesanghyeon"];
+        //변수에 배열이라는 새로운 데이터가 담겼다.
+        //2개의 물건을 itsme 라는 수납장안에 넣었다
+    </script>
+    <h2>get</h2>
+    <!-- 데이터를 넣었으면 꺼낼 수도 잇어야 한다 -->
+    <script>
+        document.write(itsme[0]);
+        //0번 째 값을 출력해라 > moca
+        //index 0 번 moca, index 1 : leesanghyeon
+        document.write(itsme[1]);
+    </script>
+
+    <h2>add</h2>
+    <script>
+        itsme.push('sanghyeon');
+        itsme.push('leesang');
+        //push 배열에 데이터를 추가하고 싶을때
+    </script>
+
+    <h2>count</h2>
+    <script>
+        document.write(itsme.length);
+        //2출력
+    </script>
+    
+</body>
+</html>

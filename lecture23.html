@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 23. 배열과 반복문의 활용 -->
+    <h1><a href="index.html">WEB</a></h1>
+    <input id="night_day" type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night'){
+        target.style.backgroundColor = 'black';
+        target.style.color = 'white';
+        this.value = 'day';
+        //this의 4가지 역할
+        //1. regular function call(일반 함수 실행 방식)
+        //global object 브라우저 상에서 window 객체를 말한다.
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+            alist[i].style.color = 'powderblue'
+            i = i + 1;
+        }
+    } else {
+        target.style.backgroundColor = 'white';
+        target.style.color = 'black';
+        this.value = 'night';
+
+        var alist = document.querySelectorAll('a')
+        var i = 0;
+        while(i < alist.length){
+            alist[i].style.color = 'red';
+            i = i + 1;
+        }
+    }
+    //검색결과를 알려주지 말고 검색방법을 알려줘라
+    //var alist = document.querySelectorall('a');
+    //console.log(alist.length);
+    //
+    ">
+</body>
+</html>

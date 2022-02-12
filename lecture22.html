@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <!-- 22. 배열과 반복문  -->
+    <h1>Loop & Array</h1>    
+    <script>
+        var coworkers = ['freing','leeche','moca','pheartt','leian']
+        //'freing' 0번째 index
+    </script>
+    <h2>Co workers</h2>
+    <ul>
+        <li>freing</li>
+        <li>sanghyeon</li>
+        <li>moca</li>
+        <li>pheartt</li>
+    </ul>
+    <!-- script tag -->
+    <ul>
+        <script>
+            var i = 0;
+            while(i < 4){
+                document.write('<li>'+coworkers[i]+'</li>');
+                i = i + 1;
+            }
+            //위의 변수 var 가 추가되면 출력되지 않는다
+            //또한 element 가 3개가 되면 마지막 값이 undefined 가 뜬다
+            //data가 바뀌었다고 로직이 바뀌면 굉장히 챙피한 일
+            //date가 바껴도 작동하는 로직을 짜야 한다
+
+            var i = 0;
+            while(i < coworkers.length){
+                document.write('<li><a href="http://naver.com/'+coworkers[i]+'">'+coworkers[i]+'</a></li>');
+                i = i + 1;
+            }
+            //coworkers.length를 씀으로써 데이터에 관계없이 값이 출력된다.
+        </script>
+    </ul>
+</body>
+</html>
