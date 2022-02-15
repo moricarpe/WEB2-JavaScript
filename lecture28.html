@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        ///querySectorAll - querySelectorAll
+        //querySelector : 특정 name 이나 id를 제한하지않고 css선택자를 사용하여 요소를 찾는다.
+        //querySelectorAll : 해당 선택자에 해당하는 모든 요소를 가져온다.
+        function linksSetColor(color){
+            var alist = document.querySelectorAll('a');
+            var i = 0; 
+            while(i < alist.length){
+                alist[i].style.color = color;
+                i = i + 1;
+            }
+        }
+        function bodySetColor(color){
+            document.querySelector('body').style.color = color;
+        }
+        function BodySetBackgroundColor(color){
+            document.querySelector('body').style.backgroundColor = color;
+        }
+
+        function nightDayHandler(self){
+            var target = document.querySelector('body');
+            if(self.value === 'night'){
+
+                Body.setBackgroundColor('black');
+                //target.style.color = 'white'; 함수화할 필요가 있다
+                self.value = 'day';
+                body.setColor('white');
+                //var alist = document.querySelectorAll('a');
+                //var i = 0; 
+                ////while(i < alist.length){
+                    //alist[i].style.color = 'powderblue';
+                    //i = i + 1;
+                links.setColor('powderblue');
+                //.은 일종의 폴더(객체.메소드) 객체안에 있는 함수는 method라고 부른다.
+            } else {
+                Body.setBackgroundColor('white');
+                body.setColor('black');
+                self.value = 'night';
+                links.setColor('blue');
+                //var alist = document.querySelectorAll('a');
+                //var i = 0;
+                //while(i < alist.length){
+                    //alist[i].style.color = 'blue';
+                    //i = i + 1;
+            }
+        }
+        //29. 객체 예고(object)
+        //중복된 코드가 있다 중복을 피애야 한다.
+        //함수로 독립시키고 싶다.
+    </script>
+</head>
+<body>
+    <!-- 28. 함수의 활용 -->
+
+    <!-- refactoring : 동작은 똑같지만 코드를 효율적으로 -->
+    <h1><a href="index.html">WEB</a></h1>
+    <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+        //괄호안에 this를 기입해야 value가 변경된다
+    ">
+    <ol>
+        <li><a href="lecture5.html">HTML</a></li>
+        <li><a href="lecture9.html">CSS</a></li>
+        <li><a href="lecture15.html">JavaScript</a></li>
+    </ol>
+    <h2>JavaScript</h2>
+    <p>
+        Laborum dolore excepteur laborum incididunt. Aute excepteur commodo pariatur magna excepteur eiusmod. Sunt duis proident consectetur tempor ea veniam elit veniam veniam. Incididunt elit aliqua enim ad occaecat cupidatat magna dolore. Non eiusmod culpa laboris laboris sint. Elit Lorem fugiat commodo ea excepteur laborum ipsum.
+                        
+    </p> 
+</body>
+</html>
